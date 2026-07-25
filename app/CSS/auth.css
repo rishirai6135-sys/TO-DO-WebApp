@@ -6,13 +6,88 @@
 }
 
 :root {
-    --primary-color: #F1E8B8;
-    --secondary-color: #E58F65;
+    --primary-color: #E58F65;
+    --secondary-color: #F1E8B8;
     --accent: #F9E784;
     --primary-text-color: #191919;
     --secondary-text-color: #A83A3A;
+    --border-color: black;
 }
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.main{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    border-radius: 2rem;
+    border: 2px solid var(--border-color);
+}
+
+.main form div {
+    margin: 1rem 0;
+}
+
+form a {
+    color: var(--secondary-text-color);
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--accent);
+    color: var(--primary-text-color);
+    margin-top: 1rem;
+}
+
 
 .credentials-label {
     display: block;
+    font-size: 1.5rem;
+}
+
+.credentials-input {
+    margin: 0.25rem 0 0.75rem 0;
+    font-size: 1.25rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: 0.25rem;
+}
+
+.terms-conditions-container {
+    font-size: 1rem;
+}
+
+.login-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
