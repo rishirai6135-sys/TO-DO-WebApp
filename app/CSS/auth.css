@@ -78,8 +78,11 @@ form a {
 .toggle-password {
     background: none;
     border: none;
-    font-size: 1.25rem;
     margin-left: 0.25rem;
+}
+.toggle-password i{
+    color: var(--primary-text-color);
+    font-size: 1.25rem;
 }
 
 .terms-conditions-container {
@@ -91,3 +94,4 @@ form a {
     justify-content: space-between;
     align-items: center;
 }
+
