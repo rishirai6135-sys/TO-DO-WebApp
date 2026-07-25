@@ -11,28 +11,39 @@
     <title>To Do App</title>
 </head>
 <body>
-    <header>
+    <nav>
         <h1>TO DO APP</h1>
-        <input type="checkbox" id="toggle-settings" placeholder="none">
-    </header>
+        <div class="profile-container">
+            <div>Username</div>
+            <div>
+                <label for="toggle-profile-menu" class="hamburger"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="toggle-profile-menu" hidden>
+            </div>
+        </div>
+    </nav>
     <main>
-        <table class="tasks-table">
+        <table id="task-table">
             <thead>
                 <tr>
-                    <th>S.No.</th>
-                    <th>Added Tasks</th>
-                    <th>Status</th>
-                    <th>Delete</th>
+                    <th class="col-num">S.No.</th>
+                    <th class="col-task">Added Tasks</th>
+                    <th class="col-status">Status</th>
+                    <th class="col-delete">Delete</th>
                 </tr>
             </thead>
-            <tbody id="tasks-lists">
+            <tbody id="task-lists">
                 <tr class="task-info">
-                    <td class="task-num">S.No.</td>
-                    <td class="task-desc">Apple</td>
-                    <td class="task-status"><button type="button">Incomplete</button></td>
-                    <td class="task-del-btn"><button type="button">Delete</button></td>
+                    <td class="col-num">S.No.</td>
+                    <td class="col-task">Apple</td>
+                    <td class="col-status"><button type="button" class="status-btn yellow">Incomplete</button></td>
+                    <td class="col-delete"><button type="button" class="del-btn">Delete</button></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="add-btn"><i class="fa-solid fa-arrow-right"></i>Add a new Task<i class="fa-solid fa-arrow-left"></i></td>
+                </tr>
+            </tfoot>
         </table>
     </main>
     <script src="./JS/tasks.js"></script>
