@@ -12,3 +12,7 @@
     --primary-text-color: #191919;
     --secondary-text-color: #A83A3A;
 }
+
+.credentials-label {
+    display: block;
+}

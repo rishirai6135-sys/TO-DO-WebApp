@@ -7,10 +7,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/auth.css">
     <title>Register</title>
 </head>
 <body>
+    <div class="main">
+        <h1>Create Account!</h1>
+        <form>
+            <div class="credentials">
+                <label for="fullname" class="credentials-label">Full Name</label>
+                <input type="text" placeholder="Enter your name" id="fullname" class="credentials-input">
+
+                <label for="age" class="credentials-label">Age</label>
+                <input type="number" placeholder="Enter your Age" id="age" class="credentials-input">
+
+                <label for="username" class="credentials-label">Username:</label>
+                <input type="text" placeholder="Enter your Username" id="sign-up-username" class="credentials-input">
+
+                <label for="password" class="credentials-label">Password:</label>
+                <input type="text" placeholder="Enter your Password" id="sign-up-password" class="credentials-input">
+                <button type="button" class="toggle-password">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+            </div>
+
+            <div class="terms-conditions-container">
+                <input type="checkbox" id="terms-conditions">
+                <label for="terms-conditions" class="terms-label">I Agree with <a href="#">terms &amp; conditions</a></label>
+            </div>
+
+            <div>
+                <button type="submit" class="sign-up-btn">Sign Up</button>
+            </div>
+        </form>
+    </div>
     <script src="./JS/auth.js"></script>
 </body>
 </html>
