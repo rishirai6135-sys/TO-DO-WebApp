@@ -1,0 +1,24 @@
+{
+  "name": "to-do-webapp",
+  "version": "1.0.0",
+  "description": "Basic To Do App\r Maintained using HTML, CSS and JS only",
+  "homepage": "https://github.com/rishirai6135-sys/TO-DO-WebApp#readme",
+  "bugs": {
+    "url": "https://github.com/rishirai6135-sys/TO-DO-WebApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishirai6135-sys/TO-DO-WebApp.git"
+  },
+  "license": "ISC",
+  "author": "Rishi Rai",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
