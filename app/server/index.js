@@ -4,31 +4,28 @@ const path = require('path');
 
 let port = 8080;
 
-app.use('/css', express.static(path.join(__dirname, '../css')));
-app.use('/js', express.static(path.join(__dirname, '../js')));
+app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, '../views'));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/login.html'));
+    res.render("login");
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/login.html'))
+app.get("/register", (req, res) => {
+    res.render("register");
 });
 
-app.get("/register.html", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/register.html'))
+app.get("/forgot-password", (req, res) => {
+    res.render("forget-password");
 });
 
-app.get("/forget-password.html", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/forget-password.html'))
+app.get("/main", (req, res) => {
+    res.render("main");
 });
 
-app.get("/main.html", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/main.html'))
-});
-
-app.get("/terms.html", (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/terms.html'))
+app.get("/terms", (req, res) => {
+    res.render("terms");
 });
 
 app.listen(port, () => {
