@@ -28,6 +28,11 @@ app.get("/terms", (req, res) => {
     res.render("terms");
 });
 
+
+app.post("/register", (req, res) => {
+    res.render("login")
+});
+
 app.listen(port, () => {
     console.log(`App is listening on port ${port}`);
 });

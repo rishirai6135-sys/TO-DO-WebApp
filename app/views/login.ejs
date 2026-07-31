@@ -16,9 +16,9 @@
         <form>
             <div class="credentials">
                 <label for="login-username" class="credentials-label">Username:</label>
-                <input type="text" placeholder="Enter your Username" id="login-username" class="credentials-input">
+                <input type="text" placeholder="Enter your Username" id="login-username" class="credentials-input" name="username">
                 <label for="login-password" class="credentials-label">Password:</label>
-                <input type="text" placeholder="Enter your Password" id="login-password" class="credentials-input">
+                <input type="text" placeholder="Enter your Password" id="login-password" class="credentials-input" name="password">
                 <button type="button" class="toggle-password">
                     <i class="fa-solid fa-eye"></i>
                 </button>
@@ -26,12 +26,12 @@
             
             <div class="terms-conditions-container">
                 <input type="checkbox" id="terms-conditions">
-                <label for="terms-conditions">I Agree with <a href="terms.html">terms &amp; conditions</a></label>
+                <label for="terms-conditions">I Agree with <a href="terms">terms &amp; conditions</a></label>
             </div>
             
             <div class="login-action">
-                <a href="forget-password.html">forgot password?</a>
-                <a href="register.html">create account?</a>
+                <a href="forget-password">forgot password?</a>
+                <a href="register">create account?</a>
             </div>
 
             <div class="btn-container">
@@ -39,6 +39,6 @@
             </div>
         </form>
     </div>
-    <script src=",/js/auth.js"></script>
+    <script src="./js/auth.js"></script>
 </body>
 </html>
