@@ -12,12 +12,16 @@ app.get("/", (req, res) => {
     res.render("login");
 });
 
+app.get("/login", (req, res) => {
+    res.render("login");
+});
+
 app.get("/register", (req, res) => {
     res.render("register");
 });
 
 app.get("/forgot-password", (req, res) => {
-    res.render("forget-password");
+    res.render("forgot-password");
 });
 
 app.get("/main", (req, res) => {
@@ -26,11 +30,6 @@ app.get("/main", (req, res) => {
 
 app.get("/terms", (req, res) => {
     res.render("terms");
-});
-
-
-app.post("/register", (req, res) => {
-    res.render("login")
 });
 
 app.listen(port, () => {
