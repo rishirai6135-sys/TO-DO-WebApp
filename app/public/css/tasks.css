@@ -77,7 +77,7 @@ thead, .add-btn, .del-btn{
 }
 
 .col-status {
-    width: 15%;
+    width: 20%;
 }
 
 .col-delete {
@@ -85,7 +85,7 @@ thead, .add-btn, .del-btn{
 }
 
 .green{
-    background-color: lime;
+    background-color: lightgreen;
 }
 
 .red {
@@ -93,5 +93,10 @@ thead, .add-btn, .del-btn{
 }
 
 .yellow {
-    background-color: greenyellow;
+    background-color: lightyellow
+}
+
+.placholder{
+    width: 100%;
+    background-color: var(--secondary-color);
 }

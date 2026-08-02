@@ -39,7 +39,6 @@ form.addEventListener("click", function (event) {
             alert("Agree Terms and Conditions");
             return;
         }
-        
         alert("Sign-UP Sucessfull");
     }
 });
